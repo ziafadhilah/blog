@@ -251,13 +251,13 @@ return [
         [
             'text'  =>  'Produk',
             'url'   =>  '/produk',
-            'icon'  =>  'fas fa-fw fa-angle-right',
+            'icon'  =>  'fas fa-fw fa-angle-double-right',
             'icon_color' => 'blue',
         ],
         [
             'text'  =>  'Kategori',
             'url'   =>  '/kategori',
-            'icon'  =>  'fas fa-fw fa-angle-right',
+            'icon'  =>  'fas fa-fw fa-angle-double-right',
             'icon_color' => 'blue',
         ],
         ['header' => 'MENU TAMBAH'],
