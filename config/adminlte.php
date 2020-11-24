@@ -245,81 +245,57 @@ return [
             'text'          => 'Dashboard',
             'url'           => '/home',
             'icon'          => 'fas fa-fw fa-home',
-            'icon_color'    => 'orange',
         ],
-        ['header' => 'TABEL'],
         [
-            'text'  =>  'Produk',
-            'url'   =>  '/produk',
-            'icon'  =>  'fas fa-fw fa-angle-double-right',
-            'icon_color' => 'blue',
+            'text'  =>  'Buku',
+            'url'   =>  '/buku',
+            'icon'  =>  'fas fa-fw fa-book',
         ],
         [
             'text'  =>  'Kategori',
             'url'   =>  '/kategori',
-            'icon'  =>  'fas fa-fw fa-angle-double-right',
-            'icon_color' => 'blue',
-        ],
-        ['header' => 'MENU TAMBAH'],
-        // [
-        //     'text' => 'profile',
-        //     'url'  => 'profile',
-        //     'icon' => 'fas fa-fw fa-user',
-        // ],
-        [
-            'text'  =>  'Produk',
-            'url'   =>  '/produk/create',
-            'icon'  =>  'fas fa-fw fa-plus',
-            'icon_color' => 'green',
+            'icon'  =>  'fas fa-fw fa-list-ul',
         ],
         [
-            'text'  =>  'Kategori',
-            'url'   =>  '/kategori/create',
-            'icon'  =>  'fas fa-fw fa-plus',
-            'icon_color' => 'green',
+            'text' => 'Penulis',
+            'url'  => '/penulis',
+            'icon' => 'fas fa-fw fa-pencil-alt',
+        ],
+        [
+            'text'  =>  'Penerbit',
+            'url'   =>  '/penerbit',
+            'icon'  =>  'fas fa-fw fa-sun',
+        ],
+        [
+            'text'    => 'Peminjaman',
+            'icon'    => 'fas fa-fw fa-handshake',
+            'submenu' => [
+                [
+                    'text' => 'Detail Peminjaman',
+                    'url'  => '#',
+                    'icon' => 'fas fa-fw fa-angle-double-right',
+                ],
+                [
+                    'text' => 'Sudah Kembali',
+                    'url'  => '#',
+                    'icon' => 'fas fa-fw fa-check',
+                ],
+                [
+                    'text' => 'Belum Kembali',
+                    'url'  => '#',
+                    'icon' => 'fas fa-fw fa-times',
+                ],
+            ],
+        ],
+        [
+            'text'  =>  'User',
+            'url'   =>  '/user',
+            'icon'  =>  'fas fa-fw fa-address-card',
         ],
         // [
         //     'text' => 'change_password',
         //     'url'  => '#',
         //     'icon' => 'fas fa-fw fa-lock',
-        // ],
-        // [
-        //     'text'    => 'multilevel',
-        //     'icon'    => 'fas fa-fw fa-share',
-        //     'submenu' => [
-        //         [
-        //             'text' => 'level_one',
-        //             'url'  => '#',
-        //         ],
-        //         [
-        //             'text'    => 'level_one',
-        //             'url'     => '#',
-        //             'submenu' => [
-        //                 [
-        //                     'text' => 'level_two',
-        //                     'url'  => '#',
-        //                 ],
-        //                 [
-        //                     'text'    => 'level_two',
-        //                     'url'     => '#',
-        //                     'submenu' => [
-        //                         [
-        //                             'text' => 'level_three',
-        //                             'url'  => '#',
-        //                         ],
-        //                         [
-        //                             'text' => 'level_three',
-        //                             'url'  => '#',
-        //                         ],
-        //                     ],
-        //                 ],
-        //             ],
-        //         ],
-        //         [
-        //             'text' => 'level_one',
-        //             'url'  => '#',
-        //         ],
-        //     ],
         // ],
         // ['header' => 'labels'],
         // [

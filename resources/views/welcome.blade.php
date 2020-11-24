@@ -14,13 +14,13 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="{{asset('img/slider-1.png')}}" class="d-block w-100" alt="first">
+            <img src="{{asset('img/1.jpg')}}" class="d-block w-100" alt="first">
         </div>
         <div class="carousel-item">
-            <img src="{{asset('img/slider-2.png')}}" class="d-block w-100" alt="second">
+            <img src="{{asset('img/2.jpg')}}" class="d-block w-100" alt="second">
         </div>
         <div class="carousel-item">
-            <img src="{{asset('img/slider-3.jpg')}}" class="d-block w-100" alt="third">
+            <img src="{{asset('img/3.jpg')}}" class="d-block w-100" alt="third">
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
