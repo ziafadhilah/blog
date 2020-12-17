@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Books;
 
-class BukuController extends Controller
+class BooksController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,8 @@ class BukuController extends Controller
      */
     public function index()
     {
-        return view('/admin/buku');
+        $book = Books::all();
+        return view('/admin/buku',['books' => $book]);
     }
 
     /**

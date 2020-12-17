@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\BukuController;
+use App\Http\Controllers\BooksController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,4 +26,4 @@ Route::get('/home', [HomeController::class, 'index']);
 
 Route::get('/profile', [ProfileController::class, 'index']);
 
-Route::get('/buku', [BukuController::class, 'index']);
+Route::get('/buku', [BooksController::class, 'index']);

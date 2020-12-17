@@ -32,85 +32,68 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
-<div class="container">
+<div class="container mt-3">
     <div class="row">
         <div class="col-12">
-            <div class="tab mt-3">
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs nav-justified" role="tablist">
-
-                    <li class="nav-item">
-                        <a class="nav-link active text-dark" data-toggle="tab" href="#ch">Choco</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" data-toggle="tab" href="#co">Coffee</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" data-toggle="tab" href="#tea">Tea</a>
-                    </li>
-
-                </ul>
-
-                <!-- Tab panes -->
-                <div class="tab-content">
-
-                    <div id="ch" class="container tab-pane active">
-                        <div class="card card-body mt-3" style="max-width: 100%;">
-                            <div class="row no-gutters">
-                                <div class="col-md-4">
-                                    <img src="{{asset('img/halu1.jpeg')}}" class="card-img" alt="...">
+            <div class="card border-info">
+                <div class="card-header text-white bg-primary">
+                    <center>
+                        <h3 class="text-white">
+                            <i class="fa fa-book"></i> Buku Pilihan
+                        </h3>
+                    </center>
+                </div>
+                <div class="card-body">
+                    <div class="card-deck">
+                        <div class="card">
+                            <center>
+                                <div class="zoom">
+                                    <img class="card-img-top mt-3" src="{{asset('img/book-cover/ruby-book.jpg')}}" alt="Card image cap" style="width: 75%;">
                                 </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lemon Tea</h5>
-                                        <p class="card-text"><small class="text-muted">Harga Rp. 15000.-</small></p>
-                                        <p class="card-text">Lemon tea deskripsi</p>
-                                        <a href="" class="btn btn-outline-primary">Contoh</a>
-                                    </div>
+                            </center>
+                            <div class="card-body">
+                                <h5 class="card-title">Ruby Programming Book</h5>
+                                <p class="card-text">Ini adalah deskripsi Ruby programming book</p>
+                            </div>
+                            <div class="card-footer text-right">
+                                <small class="text-muted">
+                                    <a class="btn btn-outline-primary" href="">Selengkapnya <i class="fa fa-arrow-right"></i></a>
+                                </small>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <center>
+                                <div class="zoom">
+                                    <img class="card-img-top mt-3" src="{{asset('img/book-cover/python.jpg')}}" alt="Card image cap" style="width: 75%;">
                                 </div>
+                            </center>
+                            <div class="card-body">
+                                <h5 class="card-title">Python Programming Book</h5>
+                                <p class="card-text">Ini adalah deskripsi Python programming book</p>
+                            </div>
+                            <div class="card-footer text-right">
+                                <small class="text-muted">
+                                    <a class="btn btn-outline-primary" href="">Selengkapnya <i class="fa fa-arrow-right"></i></a>
+                                </small>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <center>
+                                <div class="zoom">
+                                    <img class="card-img-top mt-3" src="{{asset('img/book-cover/php.jpg')}}" alt="Card image cap" style="width: 75%;">
+                                </div>
+                            </center>
+                            <div class="card-body">
+                                <h5 class="card-title">PHP Programming Book</h5>
+                                <p class="card-text">Ini adalah deskripsi PHP programming book</p>
+                            </div>
+                            <div class="card-footer text-right">
+                                <small class="text-muted">
+                                    <a class="btn btn-outline-primary" href="">Selengkapnya <i class="fa fa-arrow-right"></i></a>
+                                </small>
                             </div>
                         </div>
                     </div>
-
-                    <div id="co" class="container tab-pane fade">
-                        <div class="card card-body mt-3" style="max-width: 100%;">
-                            <div class="row no-gutters">
-                                <div class="col-md-4">
-                                    <img src="{{asset('img/halu1.jpeg')}}" class="card-img" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lemon Tea</h5>
-                                        <p class="card-text"><small class="text-muted">Harga Rp. 15000.-</small></p>
-                                        <p class="card-text">Lemon tea deskripsi</p>
-                                        <a href="" class="btn btn-outline-primary">Contoh</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="tea" class="container tab-pane fade">
-                        <div class="card card-body mt-3" style="max-width: 100%;">
-                            <div class="row no-gutters">
-                                <div class="col-md-4">
-                                    <img src="{{asset('img/halu1.jpeg')}}" class="card-img" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lemon Tea</h5>
-                                        <p class="card-text"><small class="text-muted">Harga Rp. 15000.-</small></p>
-                                        <p class="card-text">Lemon tea deskripsi</p>
-                                        <a href="" class="btn btn-outline-primary">Contoh</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br><br><br>
-
                 </div>
             </div>
         </div>
