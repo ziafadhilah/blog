@@ -57,10 +57,7 @@
                         <a class="nav-item nav-link" href="{{url('/')}}"><i class="fa fa-angle-right"></i> <b>Daftar Buku</b> <i class="fa fa-angle-left"></i></a>
                     </div>
                     <div class="zoom">
-                        <a class="nav-item nav-link" href="{{url('/about')}}"><i class="fa fa-angle-right"></i> <b>Daftar Penerbit</b> <i class="fa fa-angle-left"></i></a>
-                    </div>
-                    <div class="zoom">
-                        <a class="nav-item nav-link" href="{{url('/about')}}"><i class="fa fa-angle-right"></i> <b>Daftar Pengarang</b> <i class="fa fa-angle-left"></i></a>
+                        <a class="nav-item nav-link" href="{{url('/about')}}"><i class="fa fa-angle-right"></i> <b>Kategori</b> <i class="fa fa-angle-left"></i></a>
                     </div>
                 </div>
             </div>

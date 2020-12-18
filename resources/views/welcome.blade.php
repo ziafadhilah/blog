@@ -95,6 +95,58 @@
                         </div>
                     </div>
                 </div>
+                <div class="card-body">
+                    <div class="card-deck">
+                        <div class="card">
+                            <center>
+                                <div class="zoom">
+                                    <img class="card-img-top mt-3" src="{{asset('img/book-cover/linux.jpg')}}" alt="Card image cap" style="width: 75%;">
+                                </div>
+                            </center>
+                            <div class="card-body">
+                                <h5 class="card-title">Linux Notes for Professionals</h5>
+                                <p class="card-text">Ini adalah deskripsi Linux Notes for Professionals</p>
+                            </div>
+                            <div class="card-footer text-right">
+                                <small class="text-muted">
+                                    <a class="btn btn-outline-primary" href="">Selengkapnya <i class="fa fa-arrow-right"></i></a>
+                                </small>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <center>
+                                <div class="zoom">
+                                    <img class="card-img-top mt-3" src="{{asset('img/book-cover/python.jpg')}}" alt="Card image cap" style="width: 75%;">
+                                </div>
+                            </center>
+                            <div class="card-body">
+                                <h5 class="card-title">Python Programming Book</h5>
+                                <p class="card-text">Ini adalah deskripsi Python programming book</p>
+                            </div>
+                            <div class="card-footer text-right">
+                                <small class="text-muted">
+                                    <a class="btn btn-outline-primary" href="">Selengkapnya <i class="fa fa-arrow-right"></i></a>
+                                </small>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <center>
+                                <div class="zoom">
+                                    <img class="card-img-top mt-3" src="{{asset('img/book-cover/php.jpg')}}" alt="Card image cap" style="width: 75%;">
+                                </div>
+                            </center>
+                            <div class="card-body">
+                                <h5 class="card-title">PHP Programming Book</h5>
+                                <p class="card-text">Ini adalah deskripsi PHP programming book</p>
+                            </div>
+                            <div class="card-footer text-right">
+                                <small class="text-muted">
+                                    <a class="btn btn-outline-primary" href="">Selengkapnya <i class="fa fa-arrow-right"></i></a>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
