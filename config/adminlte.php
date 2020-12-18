@@ -248,12 +248,12 @@ return [
         ],
         [
             'text'  =>  'Buku',
-            'url'   =>  '/buku',
+            'url'   =>  '/books',
             'icon'  =>  'fas fa-fw fa-book',
         ],
         [
             'text'  =>  'Kategori',
-            'url'   =>  '/kategori',
+            'url'   =>  '/category',
             'icon'  =>  'fas fa-fw fa-list-ul',
         ],
         [

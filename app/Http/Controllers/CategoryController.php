@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Books;
+use App\Models\Category;
 
-class BooksController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class BooksController extends Controller
      */
     public function index()
     {
-        $book = Books::all();
-        return view('/admin/books/index',['books' => $book]);
+        $ctg = Category::all();
+        return view('/admin/category/index', ['category' => $ctg]);
     }
 
     /**
