@@ -5,6 +5,7 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\BooksController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,4 +27,6 @@ Route::get('/home', [HomeController::class, 'index']);
 
 Route::get('/profile', [ProfileController::class, 'index']);
 
-Route::get('/buku', [BooksController::class, 'index']);
+Route::get('/books', [BooksController::class, 'index']);
+
+Route::get('/category', [CategoryController::class, 'index']);
