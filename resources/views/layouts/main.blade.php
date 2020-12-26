@@ -9,23 +9,29 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
-    <title>@yield('title') : Perpustakaan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="shortcut icon" href="{{asset('img/logo.png')}}" type="image/x-icon">
+    <title>@yield('title') : SMK Negeri 2 Bandung</title>
     <style>
         .zoom {
             transition: transform .1s;
             /* Animation */
-            margin: 0 auto;
+            /* margin: 0 auto; */
         }
 
         .zoom:hover {
-            transform: scale(1.2);
+            transform: scale(0.9);
             /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+        :root{
+            --animate-duration: 800ms;
+            --animate-delay: 0.9s;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <!-- <div class="container">
         <div class="d-flex bd-highlight">
             <div class="p-2 bd-highlight">
                 <div class="btn-group dropdown">
@@ -40,8 +46,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    </div> -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a href="{{url('/')}}">
                 <div class="zoom">
@@ -54,21 +60,34 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
                     <div class="zoom">
-                        <a class="nav-item nav-link" href="{{url('/')}}"><i class="fa fa-angle-right"></i> <b>Daftar Buku</b> <i class="fa fa-angle-left"></i></a>
+                        <a class="nav-item nav-link" href="{{url('/')}}">
+                            <h5 style="color: #f5ab35;">PROFIL SEKOLAH</h5>
+                        </a>
                     </div>
                     <div class="zoom">
-                        <a class="nav-item nav-link" href="{{url('/about')}}"><i class="fa fa-angle-right"></i> <b>Kategori</b> <i class="fa fa-angle-left"></i></a>
+                        <a class="nav-item nav-link" href="{{url('/kegiatan')}}">
+                            <h5 style="color: #f5ab35;">KEGIATAN</h5>
+                        </a>
+                    </div>
+                    <div class="zoom">
+                        <a class="nav-item nav-link" href="{{url('/kompetensi')}}">
+                            <h5 style="color: #f5ab35;">KOMPETENSI</h5>
+                        </a>
+                    </div>
+                    <div class="zoom">
+                        <a class="nav-item nav-link" href="{{url('/guru')}}">
+                            <h5 style="color: #f5ab35;">MANAJEMEN</h5>
+                        </a>
                     </div>
                 </div>
             </div>
     </nav>
-    <p></p>
 
     @yield('container')
 
-    <div class="card-footer mt-3 bg-primary">
+    <div class="card-footer mt-3 bg-dark">
         <div class="container">
-            &copy 2020 Zia Fadhilah - All right reserved!
+            <h5 style="color: #f5ab35;">&copy 2020 SMK Negeri 2 - All right reserved!</h5>
         </div>
     </div>
 
