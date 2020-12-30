@@ -10,24 +10,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="{{asset('css/main.css')}}">
     <link rel="shortcut icon" href="{{asset('img/logo.png')}}" type="image/x-icon">
     <title>@yield('title') : SMK Negeri 2 Bandung</title>
-    <style>
-        .zoom {
-            transition: transform .1s;
-            /* Animation */
-            /* margin: 0 auto; */
-        }
-
-        .zoom:hover {
-            transform: scale(0.9);
-            /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-        }
-        :root{
-            --animate-duration: 800ms;
-            --animate-delay: 0.9s;
-        }
-    </style>
 </head>
 
 <body>
@@ -47,7 +32,7 @@
             </div>
         </div>
     </div> -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
         <div class="container">
             <a href="{{url('/')}}">
                 <div class="zoom">
@@ -58,36 +43,49 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                    <div class="zoom">
-                        <a class="nav-item nav-link" href="{{url('/')}}">
-                            <h5 style="color: #f5ab35;">PROFIL SEKOLAH</h5>
-                        </a>
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="">
+                        <h5 style="color: #f5ab35;"></h5>
+                    </a>
+                <div class="dropdown mt-2">
+                    <h5 class="nav-item nav-link" style="color: white; cursor:pointer;">Profil Sekolah</h5>
+                    <div class="dropdown-content">
+                        <a class="menu" href="{{url('/public/sejarah')}}">Sejarah</a> <p></p>
+                        <a class="menu" href="{{url('/public/sambutan')}}">Sambutan Kepala Sekolah</a> <p></p>
+                        <a class="menu" href="">Program Unggulan</a> <p></p>
+                        <a class="menu" href="">Prestasi Sekolah</a>
                     </div>
-                    <div class="zoom">
-                        <a class="nav-item nav-link" href="{{url('/kegiatan')}}">
-                            <h5 style="color: #f5ab35;">KEGIATAN</h5>
-                        </a>
+                </div>
+                <div class="dropdown mt-2 dropright">
+                    <h5 class="nav-item nav-link" style="color: white; cursor:pointer;">Kompetensi</h5>
+                    <div class="dropdown-content">
+                        <a class="menu" href="{{url('/public/tkisr')}}">TKI & SR</a> <p></p>
+                        <a class="menu" href="{{url('/public/mesin')}}">Teknik Mesin</a>
                     </div>
-                    <div class="zoom">
-                        <a class="nav-item nav-link" href="{{url('/kompetensi')}}">
-                            <h5 style="color: #f5ab35;">KOMPETENSI</h5>
-                        </a>
+                </div>
+                <div class="dropdown mt-2 dropright">
+                    <h5 class="nav-item nav-link" style="color: white; cursor:pointer;">Kegiatan</h5>
+                    <div class="dropdown-content">
+                        <a class="menu" href="{{url('/public/akademik')}}">Akademik</a> <p></p>
+                        <a class="menu" href="">Kerjasama</a>
                     </div>
-                    <div class="zoom">
-                        <a class="nav-item nav-link" href="{{url('/guru')}}">
-                            <h5 style="color: #f5ab35;">MANAJEMEN</h5>
-                        </a>
+                </div>
+                <div class="dropdown mt-2">
+                    <h5 class="nav-item nav-link" style="color: white; cursor:pointer;">Layanan</h5>
+                    <div class="dropdown-content">
+                        <a class="menu" href="{{url('/public/akademik')}}">Akademik</a> <p></p>
+                        <a class="menu" href="">Kerjasama</a>
                     </div>
                 </div>
             </div>
+        </div>
     </nav>
 
     @yield('container')
 
-    <div class="card-footer mt-3 bg-dark">
+    <div class="card-footer mt-3 bg-primary">
         <div class="container">
-            <h5 style="color: #f5ab35;">&copy 2020 SMK Negeri 2 - All right reserved!</h5>
+            <h5 style="color: white;">&copy 2020 SMK Negeri 2 - All right reserved!</h5>
         </div>
     </div>
 

@@ -11,8 +11,13 @@ class PagesController extends Controller
         return view('welcome');
     }
 
-    public function lokasi()
+    public function tkisr()
     {
-        return view('public/lokasi');
+        return view('public/tkisr');
+    }
+
+    public function sambutan()
+    {
+        return view('public/sambutan');
     }
 }

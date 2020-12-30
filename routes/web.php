@@ -19,6 +19,8 @@ use App\Http\Controllers\CategoryController;
 */
 
 Route::get('/', [PagesController::class, 'index']);
+Route::get('/public/tkisr', [PagesController::class, 'tkisr']);
+Route::get('/public/sambutan', [PagesController::class, 'sambutan']);
 
 // Auth::routes(); //untuk aktifkan registrasi
 Auth::routes(['register' => false]); //untuk nonaktifkan registrasi

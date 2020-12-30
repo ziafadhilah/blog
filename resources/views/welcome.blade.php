@@ -14,19 +14,24 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-caption d-none d-md-block">
-            <h1 style="color: aqua;" class="animate__animated animate__fadeInLeft">SELAMAT DATANG DI</h1>
-            <p>
-                <h5 style="color: #f5ab35;" class="animate__animated animate__fadeInRight">WEBSITE SMK NEGERI 2 KOTA BANDUNG</h5>
-            </p>
+            <div class="container mt-3">
+                <div class="jumbotron">
+                    <h1 class="display-4 animate__animated animate__fadeInDown">
+                        Selamat Datang di Website SMK Negeri 2
+                    </h1>
+                    <hr class="my-4">
+                    <p class="lead animate__animated animate__fadeInUp"><i>SMK 2 BISA, SMK NEGERI 2 JUARA!</i></p>
+                </div>
+            </div>
         </div>
         <div class="carousel-item active">
-            <img src="{{asset('img/1.jpg')}}" class="d-block w-100 animate__animated animate__fadeIn animate__delay-1s" alt="first">
+            <img src="{{asset('img/1.jpeg')}}" class="d-block w-100 animate__animated animate__fadeIn animate__delay-1s" alt="first">
         </div>
         <div class="carousel-item">
-            <img src="{{asset('img/2.jpg')}}" class="d-block w-100 animate__animated animate__fadeIn animate__delay-1s" alt="second">
+            <img src="{{asset('img/2.jpeg')}}" class="d-block w-100 animate__animated animate__fadeIn animate__delay-1s" alt="second">
         </div>
         <div class="carousel-item">
-            <img src="{{asset('img/3.jpg')}}" class="d-block w-100 animate__animated animate__fadeIn animate__delay-1s" alt="third">
+            <img src="{{asset('img/3.jpeg')}}" class="d-block w-100 animate__animated animate__fadeIn animate__delay-1s" alt="third">
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -38,25 +43,31 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
+
 <div class="container mt-3">
-    <div class="row">
-        <div class="col-sm-5 col-md-5 mt-3">
-            <img src="{{asset('img/hasan-iskandar.png')}}" width="100%">
+    <div class="card border-info">
+        <div class="card-header text-center bg-primary">
+            <div class="zoom">
+                <h3 class="text-white"><i class="fa fa-cogs"></i> Visi & Misi SMK Negeri 2 Bandung</h3>
+            </div>
         </div>
-        <div class="col-sm-7 col-md-7 mt-3">
-            <h1>SAMBUTAN KEPALA SEKOLAH</h1>
-            <p class="text-muted">
-                <h5>
-                    Assalamualaikum Warrahmatullahi Wabarrakatuh.
+        <div class="card-body">
+            <h4 class="card-title">Visi</h4>
+            <p class="card-text">
+                <h5> Sebagai lembaga pendidikan kejuruan profesional dan berwawasan lingkungan yang mampu menghasilkan lulusan yang bertaqwa, cerdas, kompeten dan kompetetif.</h5>
+            </p>
+            <p>
+                <h4 class="card-title">Misi</h4>
+            </p>
+            <p class="card-text">
+                <h5 style="text-align: justify;">
+                    <i class="fa fa-angle-double-right"></i> Mengembangkan sikap kewirausahaan yang jujur dan bertanggung jawab. <p></p>
+                    <i class="fa fa-angle-double-right"></i> Memberikan mutu layanan pendidikan kejuruan yang profesional dan berkualitas. <p></p>
+                    <i class="fa fa-angle-double-right"></i> Meningkatkan kebekerjaan lulusan serta dapat mengembangkan sikap profesional sesuai bidang keahliannya. <p></p>
+                    <i class="fa fa-angle-double-right"></i> Menghasilkan lulusan yang mampu memilih karir, berkompeten, produktif, dan dapat mengembangkan diri. <p></p>
+                    <i class="fa fa-angle-double-right"></i> Menciptakan lingkungan sekolah yang kondusif. <p></p>
+                    <i class="fa fa-angle-double-right"></i> Menjalin kerjasama dengan dunia usaha/industri serta instansi terkait.
                 </h5>
-            </p>
-            <p class="text-muted">
-                Selamat datang di website SMK Negeri 2 Bandung.
-            </p>
-            <p class="text-muted">
-                Di SMKN 2 Bandung setiap siswa memiliki hak untuk berprestasi dan mendapatkan pelayanan yang baik. Karena kami memandang ini semua adalah amanah yang akan kami pertanggung jawabkan di hadapan Allah SWT. Tentu hal ini semakin terasa mudah dengan adanya kerjasama dari para orang tua siswa dalam menjalankan program sekolah.
-            <br>
-                Sekali lagi kami ucapkan selamat datang di SMKN 2 Bandung. Marilah bekerjasama agar anak-anak kita dapat berkembang dengan baik sehingga tumbuh menjadi generasi yang berakhlakul karimah dan cerdas.
             </p>
         </div>
     </div>
@@ -68,7 +79,7 @@
                 <div class="card-header text-white bg-primary">
                     <center>
                         <h3 class="text-white">
-                            <i class="fa fa-book"></i> Buku Pilihan
+                            <i class="fa fa-newspaper-o"></i> Penerimaan Peserta Didik Baru (PPDB)
                         </h3>
                     </center>
                 </div>
@@ -180,4 +191,18 @@
         </div>
     </div>
 </div>
+<div class="container mt-3">
+    <div class="tilu">
+        <div class="column zoom">
+            <img src="{{asset('img/1.jpeg')}}" class="responsive">
+        </div>
+        <div class="column zoom">
+            <img src="{{asset('img/2.jpeg')}}" class="responsive">
+        </div>
+        <div class="column zoom">
+            <img src="{{asset('img/3.jpeg')}}" class="responsive">
+        </div>
+    </div>
+</div>
+<br>
 @endsection
